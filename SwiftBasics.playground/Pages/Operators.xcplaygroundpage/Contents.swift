@@ -76,6 +76,7 @@ c = 10
 var result1: Int = -1 // Declared but uninitialized.
 func challenge1() -> Void {
     // CODE GOES HERE
+    result1 = (a + b) * c
 }
 
 /*
@@ -89,6 +90,7 @@ c = 4
 var result2: Int = -1 // Declared but uninitialized.
 func challenge2() -> Void {
     // CODE GOES HERE
+    result2 = (result1 / a) - (b + c)
 }
 
 /*
@@ -102,6 +104,7 @@ e = " years."
 var result3: String = "" // Declared but uninitialized.
 func challenge3() -> Void {
     // CODE GOES HERE
+    result3 = d + String(result2) + e
 }
 
 /*
@@ -117,7 +120,7 @@ e = ". That's unfortunate."
 var result4: String = "" // Declared but uninitialized.
 func challenge4() -> Void {
     // CODE GOES HERE
-    
+    result4 = "\(d)\(a % b)\(e)"
 }
 
 /*
@@ -127,4 +130,6 @@ func challenge4() -> Void {
  */
 func challenge5() -> Void {
     // CODE GOES HERE
+    a += 10
+    b *= a
 }
